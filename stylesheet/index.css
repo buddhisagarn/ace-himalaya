@@ -186,7 +186,7 @@ nav {
     object-fit: cover;
     height: 100%;
     width: 100%;
-    min-height: 500px;
+    min-height: 80vh;
     min-width: 100%;
 }
 
@@ -397,7 +397,8 @@ input[name=search] {
     width: 100%;
     margin-top: 30px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 1vw;
 }
 
 .box-event1,
@@ -415,19 +416,21 @@ input[name=search] {
 .photo-event {
     object-fit: contain;
     height: 60%;
+    overflow: hidden;
 }
 
 .photo-event img {
     width: 100%;
     border-radius: 5px;
     height: 100%;
+    object-fit: cover;
+
 
 }
 
-.photo-event:hover {
-    height: 62%;
-    margin-bottom: 10px;
-    transition: 0.5s;
+.photo-event:hover img {
+    transform: scale(1.1);
+    transition: 0.8s;
 }
 
 .image-txt {
@@ -481,7 +484,7 @@ input[name=search] {
     height: 200px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .lower-part-2 {
@@ -516,28 +519,6 @@ div.class-1:hover {
     margin: auto;
     text-align: center;
     color: rgb(73, 73, 73);
-
-}
-
-.find-out-button {
-    text-transform: uppercase;
-    margin-left: 43%;
-    padding: 15px 25px;
-    margin-bottom: 55px;
-    margin-top: 45px;
-    background-color: blue;
-    color: white;
-    font-size: large;
-    border: transparent 1px;
-    outline: none;
-    border-radius: 5px;
-}
-
-.find-out-button:hover {
-    color: black;
-    background: white;
-    border: solid 1px;
-    transition: 0.3s;
 }
 
 @media only screen and (min-width:830px) {}
@@ -597,7 +578,7 @@ div.class-1:hover {
         object-fit: cover;
         width: 100%;
         top: -10%;
-        height: calc(100vh - 82px);
+        height: calc(80vh - 82px);
 
     }
 
@@ -607,6 +588,7 @@ div.class-1:hover {
         grid-template-columns: auto auto;
         height: auto;
         row-gap: 5vh;
+        column-gap: 13vw;
     }
 
     div.lower-part-1,
@@ -646,10 +628,6 @@ div.class-1:hover {
         grid-template-columns: auto;
         height: auto;
         row-gap: 15px;
-    }
-
-    button.find-out-button {
-        margin-left: 30%;
     }
 
     .second-experience {
@@ -708,6 +686,7 @@ div.class-1:hover {
     object-fit: cover;
     height: 400px;
     width: auto;
+    overflow: hidden;
 }
 
 .journy-2 img {
@@ -753,6 +732,7 @@ div.class-1:hover {
     width: 400px;
     height: 200px;
     object-fit: contain;
+    overflow: hidden;
 }
 
 .image-journy img {
@@ -760,6 +740,14 @@ div.class-1:hover {
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
+}
+
+.journy-2 img:hover,
+.image-journy img:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+    cursor: pointer;
+
 }
 
 @media only screen and (max-width:1111px) {
@@ -809,7 +797,7 @@ div.class-1:hover {
 
 @media only screen and (min-width:1111px) {
     .the-experience {
-        top: 25vw;
+        top: 15vw;
         font-size: 50px;
     }
 }
@@ -853,6 +841,7 @@ div.class-1:hover {
 /* activities we offer */
 .section-5 {
     height: auto;
+    margin-top: 50px;
 }
 
 .photo-event-2 {
@@ -872,5 +861,133 @@ div.class-1:hover {
 .event-box-2 {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 1vw;
+}
+
+.section-6 {
+    height: auto;
+    width: 100%;
+}
+
+.section-6 p {
+    text-align: center;
+}
+
+.traveller-review {
+    font-size: 26px;
+    padding-bottom: 5px;
+}
+
+.underline {
+    height: 2px;
+    background: rgb(213, 87, 3);
+    width: 100px;
+    margin: auto;
+}
+
+.traveller-review-discription {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
+}
+
+.trip-advisor {
+    padding-top: 20px;
+}
+
+.circle-img a {
+    padding-left: 15px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.review-box {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.review-box-inside {
+    width: 350px;
+    height: 100%;
+    border: solid 1px rgb(212, 212, 212);
+    padding: 5px;
+    padding-bottom: 50px;
+}
+
+.upper-review {
+    display: flex;
+    align-items: center;
+}
+
+.review-box-inside img {
+    border-radius: 25px;
+    margin: 13px;
+
+}
+
+.review-box-inside h3 {
+    text-indent: 15px;
+    font-weight: 500;
+}
+
+.discription-p {
+    text-align: start !important;
+    padding-left: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
+    line-height: 25px;
+}
+
+@media only screen and (max-width:580px) {
+    .review-box {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+.trip-advisor-1,
+.trip-advisor-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.trip-advisor-2 {
+    padding-right: 65px;
+}
+
+.trip-advisor-2 a {
+    color: red;
+}
+
+.button-review {
+    display: flex;
+    justify-content: center;
+}
+
+.read-all-review,
+.find-out-button {
+    padding: 5px;
+    width: 230px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: larger;
+    background: blue;
+    color: white;
+    border: none;
+}
+
+.read-all-review:hover,
+.find-out-button:hover {
+    cursor: pointer;
+    color: black;
+    background: white;
+    border: solid 1px;
+    transition: 0.5s;
 }
