@@ -29,127 +29,7 @@ nav {
 }
 
 /* For seach items min width */
-@media only screen and (min-width:830px) {
-    .image-text {
-        display: none;
-    }
-}
 
-@media only screen and (max-width: 830px) {
-
-    div.nav-mid,
-    div.nav-last {
-        display: none;
-    }
-
-    nav {
-        background: rgb(0, 0, 0);
-    }
-
-    div.menu {
-        display: inline-block;
-        color: white;
-    }
-
-    div.menu img {
-        margin-left: 20px;
-    }
-
-    div.nav-top {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-        margin-left: 10px;
-        margin-right: 90px;
-
-    }
-
-    /* section to image conversion */
-    .section-first {
-        height: 500px;
-        width: 100%;
-        position: relative;
-    }
-
-    div.video {
-        display: none;
-    }
-
-    div.text {
-        display: none;
-    }
-
-    div.image {
-        display: contents;
-        min-width: 100%;
-        height: 100%;
-        object-fit: contain;
-        border: solid rgb(0, 53, 168);
-    }
-
-    .image img {
-        height: auto;
-        width: 100%;
-        position: absolute;
-        top: -10%;
-        min-height: 60%;
-        max-height: 80%;
-    }
-
-    /* for -box-event */
-
-    .bestseller {
-        margin-top: -299px
-    }
-
-    div.event-box {
-        display: grid;
-        grid-template-columns: auto auto;
-        color: red;
-        height: auto;
-        row-gap: 15px;
-    }
-
-    div.lower-part-1,
-    div.lower-part-2 {
-        display: grid;
-        grid-template-columns: auto auto;
-        height: auto;
-        row-gap: 55px;
-    }
-
-    div.class-1 {
-        width: 300px;
-    }
-
-}
-
-
-@media only screen and (max-width: 580px) {
-    div.event-box {
-        display: grid;
-        grid-template-columns: auto;
-        color: red;
-        height: auto;
-        row-gap: 15px;
-    }
-
-    div.class-1 {
-        margin-bottom: 50px;
-    }
-
-    div.lower-part-1,
-    div.lower-part-2 {
-        display: grid;
-        grid-template-columns: auto;
-        height: auto;
-        row-gap: 15px;
-    }
-
-    button.find-out-button {
-        margin-left: 30%;
-    }
-}
 
 .nav-image {
     height: 98px;
@@ -289,23 +169,21 @@ nav {
 /* section first below the navigation bar */
 
 .section-first {
-    height: 600px;
+    height: auto;
     width: 100%;
     position: relative;
-    z-index: -5;
-    top: -110px;
-
 }
 
 .video {
     min-width: 100%;
-    height: auto;
+    height: fit-content;
     object-fit: contain;
-    position: absolute;
-    top: 0px;
+    position: relative;
+    top: -100px;
 }
 
 .video video {
+    object-fit: cover;
     height: 100%;
     width: 100%;
     min-height: 500px;
@@ -327,6 +205,7 @@ nav {
     display: flex;
     justify-content: space-around;
     border-bottom: solid rgb(216, 213, 213) 1px;
+    display: none;
 
 }
 
@@ -405,8 +284,6 @@ nav {
 }
 
 .image-text {
-    position: absolute;
-    top: 30%;
     min-width: 100%;
 }
 
@@ -445,14 +322,64 @@ input[name=search] {
     color: red;
 }
 
+.the-experience {
+    position: absolute;
+    top: 30vh;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    text-shadow: 1px 1px black;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+/* .the-experience p {
+    display: block;
+    width: 100%;
+} */
+
+
+.discover {
+    font-size: 75px;
+    text-shadow: none;
+    text-shadow: 1px 1px black;
+
+}
+
+.second-experience {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.below-search {
+    text-align: start;
+    width: 200px;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
 .search-icon .fa {
     color: rgb(232, 11, 11);
+}
+
+/* Section 2 */
+.section-2 {
+    position: relative;
 }
 
 .bestseller .first-paragraph {
     text-align: center;
     font-size: 24px;
-    margin-top: 25px;
 }
 
 .bestseller p span {
@@ -468,7 +395,6 @@ input[name=search] {
 .event-box {
     height: 350px;
     width: 100%;
-    margin-bottom: 45px;
     margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
@@ -478,11 +404,12 @@ input[name=search] {
 .box-event2,
 .box-event3,
 .box-event4 {
-    width: 300px;
+    width: 250px;
     border: solid 1px rgb(223, 220, 220);
     height: 100%;
     border-radius: 5px;
     cursor: pointer;
+
 }
 
 .photo-event {
@@ -505,10 +432,10 @@ input[name=search] {
 
 .image-txt {
     color: white;
-    margin-top: -30px;
     text-indent: 16px;
     font-size: larger;
     text-shadow: 1px 1px 1px rgb(12, 14, 12);
+    margin-top: -30px;
 }
 
 .text-event {
@@ -529,7 +456,7 @@ input[name=search] {
 }
 
 .why-ace {
-    height: 550px;
+    height: auto;
     background: rgb(249, 248, 248);
 }
 
@@ -563,6 +490,12 @@ input[name=search] {
 
 .class-1 {
     width: 30%;
+    cursor: pointer;
+}
+
+div.class-1:hover {
+    color: red;
+    transition: 0.5s;
 }
 
 .class-1>img {
@@ -605,4 +538,339 @@ input[name=search] {
     background: white;
     border: solid 1px;
     transition: 0.3s;
+}
+
+@media only screen and (min-width:830px) {}
+
+@media only screen and (max-width: 830px) {
+
+    div.nav-mid,
+    div.nav-last {
+        display: none;
+    }
+
+    nav {
+        background: rgb(0, 0, 0);
+    }
+
+    div.menu {
+        display: inline-block;
+        color: white;
+    }
+
+    div.menu img {
+        margin-left: 20px;
+    }
+
+    div.nav-top {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        margin-left: 10px;
+        margin-right: 90px;
+
+    }
+
+    /* section to image conversion */
+    .section-first {
+        height: auto;
+        width: 100%;
+    }
+
+    div.video {
+        display: none;
+    }
+
+    div.text {
+        display: none;
+    }
+
+    div.image {
+        display: contents;
+        min-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: solid rgb(0, 53, 168);
+    }
+
+    .image img {
+        object-fit: cover;
+        width: 100%;
+        top: -10%;
+        height: calc(100vh - 82px);
+
+    }
+
+    /* for -box-event */
+    div.event-box {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: auto;
+        row-gap: 5vh;
+    }
+
+    div.lower-part-1,
+    div.lower-part-2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: auto;
+        row-gap: 55px;
+    }
+
+    div.class-1 {
+        width: 300px;
+    }
+
+    .the-experience {
+        gap: 5vw;
+    }
+
+}
+
+
+@media only screen and (max-width: 580px) {
+    div.event-box {
+        display: grid;
+        grid-template-columns: auto;
+        height: auto;
+        row-gap: 5vh;
+    }
+
+    div.class-1 {
+        margin-bottom: 50px;
+    }
+
+    div.lower-part-1,
+    div.lower-part-2 {
+        display: grid;
+        grid-template-columns: auto;
+        height: auto;
+        row-gap: 15px;
+    }
+
+    button.find-out-button {
+        margin-left: 30%;
+    }
+
+    .second-experience {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: auto;
+        column-gap: auto;
+        width: 100%;
+        height: fit-content;
+        margin-top: 10vh;
+    }
+
+    .below-search {
+        width: fit-content;
+    }
+
+    .the-experience {
+        gap: 1vw;
+    }
+
+    .the-head {
+        font-size: 7vw;
+    }
+
+    .discover {
+        font-size: 12vw;
+    }
+}
+
+.section-journy {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.journy-1 {
+    width: auto;
+    height: 420px;
+    max-height: 420px;
+
+}
+
+.journy-1 h3 {
+    color: white;
+    margin-top: -100px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 26px;
+    text-shadow: 1px 1px black;
+    letter-spacing: 1px;
+
+}
+
+.journy-2 {
+    object-fit: cover;
+    height: 400px;
+    width: auto;
+}
+
+.journy-2 img {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.journy-2 h3 {
+    color: white;
+    margin-top: -100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: -220px;
+}
+
+.journey-head {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5vw;
+}
+
+.journy-heading {
+    font-size: 2rem;
+}
+
+.journy-paragraph {
+    width: 200px;
+}
+
+.journy-1-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 33vw;
+
+}
+
+.image-journy {
+    width: 400px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.image-journy img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width:1111px) {
+    .journey-head {
+        display: none;
+    }
+
+    .section-journy {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 2.5vw;
+        height: fit-content;
+    }
+
+    .section-journy h3 {
+        display: none;
+    }
+
+    .journy-2 img {
+        width: fit-content;
+    }
+
+    .journy-2 {
+        height: 40vw;
+        width: fit-content;
+        width: auto;
+    }
+
+    .journy-1-image {
+        display: flex;
+        flex-direction: row;
+        column-gap: 2.5vw;
+        width: 60vw;
+        object-fit: cover;
+    }
+
+    .image-journy img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .image-journy {
+        height: 40vw;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width:1111px) {
+    .the-experience {
+        top: 25vw;
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width:630px) {
+    .section-journy {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 1.5vw;
+    }
+
+    .journy-1-image {
+        display: grid;
+        grid-template-rows: auto;
+    }
+
+    .journy-1-image {
+        width: auto;
+    }
+
+    .image-journy {
+        height: 200px;
+        width: 100%;
+    }
+
+    .journy-2 {
+        display: flex;
+        justify-content: center;
+        width: 267x;
+        margin-top: 2vw;
+        height: 200px;
+    }
+
+    .journy-2 img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* activities we offer */
+.section-5 {
+    height: auto;
+}
+
+.photo-event-2 {
+    height: 80%;
+    border-radius: 0px;
+}
+
+.photo-event-2:hover {
+    height: 80%;
+}
+
+.head-event {
+    font-size: 15px;
+    margin-top: 5vh;
+}
+
+.event-box-2 {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
