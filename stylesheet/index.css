@@ -855,7 +855,7 @@ div.class-1:hover {
 
 .head-event {
     font-size: 15px;
-    margin-top: 5vh;
+    margin-top: 3vh;
 }
 
 .event-box-2 {
@@ -990,4 +990,87 @@ div.class-1:hover {
     background: white;
     border: solid 1px;
     transition: 0.5s;
+}
+
+.section-8 {
+    background: #1c1c1c;
+    height: auto;
+    color: white;
+    padding-bottom: 4rem;
+}
+
+.head-trek {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 28px;
+}
+
+.underl {
+    background: rgb(255, 0, 0);
+    height: 3px;
+}
+
+.beauty {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.treking-regions {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    white-space: nowrap;
+    width: 90%;
+    overflow-x: auto;
+    padding: 1rem;
+    margin: 2rem auto;
+}
+
+.region-4 {
+    background: rgb(190, 172, 172);
+    height: 300px;
+    width: 300px;
+    flex-shrink: 0;
+    /* // prvent Card to have it's height width */
+    position: relative;
+    overflow: hidden;
+}
+
+.region-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.region-4 img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.text-region {
+    position: absolute;
+    top: 70%;
+}
+
+.text-region button {
+    padding: 5px 10px;
+    color: white;
+    font-size: larger;
+    background: blue;
+    margin-left: 100px;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.everest-p {
+    text-shadow: 3px 1px 6px black;
+    margin-left: 80px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    padding-top: 5px;
 }
