@@ -1575,8 +1575,8 @@ div.class-1:hover {
     display: contents;
 } */
 .img-9 {
-    height: 400px;
-    width: 400px;
+    height: 60vh;
+    width: 60vh;
     border: none;
     position: relative;
     overflow: hidden;
@@ -1608,6 +1608,7 @@ div.class-1:hover {
     bottom: 0;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    color: white;
 }
 
 .img-9:hover .black {
@@ -1617,4 +1618,58 @@ div.class-1:hover {
 
 .img-9:hover .fa-camera {
     display: none;
+}
+
+.black p {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50%;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+.footer-img {
+    height: 30vh;
+}
+
+.footer img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.footer-2 {
+    background: #232930;
+    color: white;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fotter {
+    width: 15%;
+    height: 60%;
+}
+
+.fotter img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.fa-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 100px;
+}
+
+.fa-1 a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(165, 165, 165);
+    line-height: 30px;
 }
